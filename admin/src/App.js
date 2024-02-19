@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import SignIn from './pages/firebaselogin/login';
+import { getAuth, onAuthStateChanged} from "firebase/auth";
+import { useEffect } from 'react';
+import {app} from "./firebase"
 
+import Home from './pages/home/home';
+
+
+const auth = getAuth(app);
 function App() {
+
+  const [user, setUser] = useState(null)
+
+useEffect(() =>{
+  onAuthStateChanged(auth, (user) => {
+  if(user){
+alert('User already logged in');
+
+setUser(user);
+  }else{
+
+    
+setUser(null);
+  }
+});},[]);
+  
+if(user===null){
+  return <SignIn/>}
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Home/>
   );
 }
 
