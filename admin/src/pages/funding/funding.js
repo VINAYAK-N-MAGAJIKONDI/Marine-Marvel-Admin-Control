@@ -150,7 +150,7 @@ function Fundings() {
     };
 
     return (
-        <div className="marketplace">
+        <div className="marketplace" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
             <AddFunding />
             <h1>Available Fundings</h1>
             <div className="fund-grid">

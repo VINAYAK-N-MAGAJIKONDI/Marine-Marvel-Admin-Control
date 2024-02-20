@@ -114,7 +114,7 @@ function Carousel() {
     };
 
     return (
-        <div className="carousel">
+        <div className="carousel" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
             <AddCarouselItem />
             <h1>Latest News and Updates</h1>
             <div className="carousel-items">

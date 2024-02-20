@@ -202,7 +202,7 @@ function CleanUps() {
   };
 
   return (
-    <div className="marketplace">
+    <div className="marketplace" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
       <AddCleanup />
       <h1>Upcoming CleanUps</h1>
       <div className="products-grid">

@@ -1,19 +1,23 @@
 import React from 'react';
 import './navbar.css';
-import icon from '../../assets/icon.png';
 import logo from '../../assets/logo.png';
 import Signoutbutton from '../signout/signoutbutton';
 
-
-function Navbar ()  {
+function Navbar() {
   return (
     <nav className="navbar">
-      <img  alt="Logo" src={logo} className="logo" />
+      <img alt="Logo" src={logo} className="logo" />
       <div className="company-names">
         <span className="company-name">Marine Marvel</span>
-
       </div>
-      
+
+
+      <label htmlFor="navbar-toggle" className="navbar-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <ul className="navbar-nav">
         <li className="nav-item">
           <a href="/" className="nav-link">Home</a>
@@ -38,8 +42,6 @@ function Navbar ()  {
         </li>
       </ul>
       <Signoutbutton />
-
-
     </nav>
   );
 }

@@ -185,7 +185,7 @@ function ProductUpload() {
     };
   
     return (
-      <div className="marketplace">
+      <div className="marketplace" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
         <ProductUpload />
         <h1>Products</h1>
         <div className="products-grid">

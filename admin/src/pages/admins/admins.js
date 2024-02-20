@@ -72,7 +72,7 @@ function UserList() {
   };
 
   return (
-    <div>
+    <div style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
       <h1>Users</h1>
       {users.length > 0 ? (
         <ul>

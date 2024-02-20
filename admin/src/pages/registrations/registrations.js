@@ -39,7 +39,7 @@ function Registrations() {
     const groupedRegistrations = groupByEventTitle();
 
     return (
-        <div className="registrations">
+        <div className="registrations" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
             <h1>Registrations by Event</h1>
             {Object.keys(groupedRegistrations).map((eventTitle) => (
                 <div key={eventTitle}>
