@@ -1,8 +1,9 @@
 .admin-header{
     text-align: center;
     align-self:center ;
+    margin-bottom: 0;
 }
 .admins-container{
-    background-color: rgb(255, 255, 255);
     height: 500px;
+    background: linear-gradient( rgb(110, 132, 150),#002633);
 }
