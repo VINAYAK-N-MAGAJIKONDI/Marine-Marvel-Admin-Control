@@ -9,7 +9,7 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
 
   
 1. **Home**
-   -After logging in, administrators can manage homepage content. Additionally, there is a message for admins.
+   - After logging in, administrators can manage homepage content. Additionally, there is a message for admins.
 2. **Cleanup Locations**
    - Add, edit, or delete cleanup locations for events.
    - View and manage registered users for cleanup events.
