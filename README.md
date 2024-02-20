@@ -35,7 +35,23 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
    - Manage admin roles and permissions.
 
 
-## Website Photos     
+## Website Photos  
+
+ ![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/5f0db937-e6db-409f-8cf4-763a267d92a5)
+ ![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/ef200d99-1928-4930-8673-8c76fc1b0e61)
+ ![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/aaaa56bf-9cab-46c1-9a77-f97c8f233a9d)
+ ![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/7b5b03a0-4083-46c7-bb8b-8d65773edf78)
+![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/6eed94d2-d5b0-4297-96fc-420738b8b80b)
+![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/93a94b59-2e07-479d-ab7b-b1e631a4f426)
+![image](https://github.com/VINAYAK-N-MAGAJIKONDI/Marine-Marvel-Admin-Control/assets/122464897/ad2d5fb0-c156-4364-bc9f-afbe88d8e61f)
+
+
+
+
+
+
+
+
 
 ## Installation Instructions
 1. Clone the Marine Marvel Admin website repository from GitHub.
