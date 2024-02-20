@@ -1,6 +1,9 @@
+// FirebaseAnalyticsDashboard.js
 import React, { useEffect, useState } from 'react';
 import { getAnalytics } from "firebase/analytics";
-import { app } from './firebase.config';
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+import { app } from '../../firebase'
 
 const FirebaseAnalyticsDashboard = () => {
   const [analyticsData, setAnalyticsData] = useState(null);
@@ -8,7 +11,8 @@ const FirebaseAnalyticsDashboard = () => {
   useEffect(() => {
     const fetchAnalyticsData = async () => {
       try {
-        const response = await getAnalytics(app).get('users');
+        const analytics = getAnalytics(app);
+        const response = await analytics.get('users');
         setAnalyticsData(response.data);
       } catch (error) {
         console.error('Error fetching analytics data:', error);

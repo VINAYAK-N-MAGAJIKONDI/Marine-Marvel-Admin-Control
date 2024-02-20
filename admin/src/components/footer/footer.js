@@ -1,13 +1,15 @@
 import React from 'react';
 import './footer.css'
 
+// import logo from '../../assets/logo.png';
+
 function Footer ()  {
   return (
     <footer className="footer-container">
-      <div className="footer-content">
+      {/* <div className="footer-content">
         <div className="footer-logo">
-          {/* Placeholder for logo */}
-          <img src="logo.png" alt="Logo" />
+          
+          <img src={icon} alt="Logo"  />
         </div>
         <div className="footer-links">
           <ul className="footer-menu">
@@ -17,9 +19,9 @@ function Footer ()  {
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="footer-bottom">
-        <p className="footer-text">© 2024 Your Company. All rights reserved.</p>
+        <p className="footer-text">© 2024 Marine Marvel . All rights reserved.</p>
       </div>
     </footer>
   );

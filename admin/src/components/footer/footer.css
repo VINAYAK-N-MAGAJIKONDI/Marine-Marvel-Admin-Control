@@ -12,7 +12,7 @@
   }
   
   .footer-logo img {
-    width: 100px; /* Adjust as needed */
+    width: 2rem; 
   }
   
   .footer-links {
@@ -43,4 +43,3 @@
   .footer-text {
     font-size: 14px;
   }
-  

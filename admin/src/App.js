@@ -5,7 +5,7 @@ import { getAuth, onAuthStateChanged} from "firebase/auth";
 import { useEffect } from 'react';
 import {app} from "./firebase"
 
-import Home from './pages/home/home';
+import Navigation from './pages/home/home';
 
 
 const auth = getAuth(app);
@@ -31,7 +31,7 @@ if(user===null){
 
 
   return (
-<Home/>
+<Navigation/>
   );
 }
 

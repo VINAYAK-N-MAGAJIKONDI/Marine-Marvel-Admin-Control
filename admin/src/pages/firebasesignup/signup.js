@@ -22,7 +22,7 @@ function Adduser() {
     const signup = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // Signed up successfully, you can handle further actions here
+             
                 alert(userCredential);
                 
             })
@@ -33,7 +33,7 @@ function Adduser() {
 
     return (
         <div className="signup-container">
-            <h2>Add User</h2>
+            <h2>Add Administrators</h2>
             <form className="signup-form">
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
@@ -58,7 +58,7 @@ function Adduser() {
                     />
                 </div>
                 {error && <p className="error-message">{error}</p>}
-                <button type="button" onClick={signup} className="signup-button">Sign Up</button>
+                <button type="button" onClick={signup} className="signup-button">Add Admin</button>
             </form>
         </div>
     );
