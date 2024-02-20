@@ -2,6 +2,7 @@
     text-align: center;
     align-self:center ;
 }
-.admin-container{
+.admins-container{
     background-color: rgb(255, 255, 255);
+    height: 500px;
 }

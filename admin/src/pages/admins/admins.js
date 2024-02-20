@@ -13,7 +13,7 @@ function Admins(){
 
 
     return(<>
-    <div className=" admins-container">
+    <div className="admins-container">
     <h1 className='admin-header'> Manage Administrators </h1>
     <Adduser />
     </div>
