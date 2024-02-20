@@ -16,11 +16,11 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
 
 3. **Registrations for Cleanup Events**
    - View registrations for cleanup events.
-   - Manage participant details and registrations.
+   
 
 4. **Latest News about Aquatic Life**
    - Add, edit, or delete news articles related to aquatic life.
-   - Manage article details such as title, content, and publication date.
+   - Manage article details such as title, description, and image.
 
 5. **Funding for NGO and Student Projects**
    - Manage funding opportunities for NGO and student projects.
@@ -33,6 +33,9 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
 7. **Admins**
    - Add or remove administrators.
    - Manage admin roles and permissions.
+
+
+## Website Photos     
 
 ## Installation Instructions
 1. Clone the Marine Marvel Admin website repository from GitHub.
