@@ -16,7 +16,7 @@ function App() {
 useEffect(() =>{
   onAuthStateChanged(auth, (user) => {
   if(user){
-alert('User already logged in');
+
 
 setUser(user);
   }else{
