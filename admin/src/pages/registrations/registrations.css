@@ -1,0 +1,71 @@
+
+.registrations {
+    background: linear-gradient(rgb(94, 166, 222), #002633);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.registrations h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.event-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.event-title {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.registration-item {
+    margin-bottom: 30px; /* Add margin bottom to create space between each username and email */
+}
+
+.registration-item p {
+    margin: 5px 0;
+}
+
+
+
+
+.event-container {
+    flex-basis: calc(50% - 10px); /* Set width of each event container for two boxes per row */
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+
+
+.registrations-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the event containers */
+}
+
+.event-container {
+    flex-basis: calc(50% - 20px); /* Set width of each event container for two containers per row */
+    margin: 10px; /* Add margin between event containers */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}

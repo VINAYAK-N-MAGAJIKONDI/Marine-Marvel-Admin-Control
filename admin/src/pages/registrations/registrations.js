@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
+import './registrations.css';
 
 function Registrations() {
     const [registrationData, setRegistrationData] = useState([]);
@@ -39,21 +40,26 @@ function Registrations() {
     const groupedRegistrations = groupByEventTitle();
 
     return (
-        <div className="registrations" style={{ background: 'linear-gradient(rgb(110, 132, 150), #002633)' }}>
+        <div className="registrations">
             <h1>Registrations by Event</h1>
+            <div className='box'>
             {Object.keys(groupedRegistrations).map((eventTitle) => (
-                <div key={eventTitle}>
-                    <h2>{eventTitle}</h2>
-                    <ul>
+                <div key={eventTitle} className="event-container">
+                    <h2 className="event-title">{eventTitle}</h2>
+                    <div className="registration-list">
                         {groupedRegistrations[eventTitle].map((registration, index) => (
-                            <li key={index}>
-                                <p><strong>Username:</strong> {registration.username}</p>
-                                <p><strong>Email:</strong> {registration.email}</p>
-                            </li>
+                            <div key={index} className="registration-item">
+                          <p><strong>Username:</strong> {registration.username}</p>
+                                    <p><strong>Email:</strong> {registration.email}</p>
+                                    
+                                    </div>
                         ))}
-                    </ul>
-                </div>
+                       
+                    </div>
+                    </div>
+               
             ))}
+             </div>
         </div>
     );
 }
