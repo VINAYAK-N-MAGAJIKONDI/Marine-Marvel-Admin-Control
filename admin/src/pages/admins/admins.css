@@ -2,8 +2,9 @@
     text-align: center;
     align-self:center ;
     margin-bottom: 0;
+    margin-top: 0;
 }
 .admins-container{
-    height: 500px;
+    height: 525px;
     background: linear-gradient( rgb(110, 132, 150),#002633);
 }
