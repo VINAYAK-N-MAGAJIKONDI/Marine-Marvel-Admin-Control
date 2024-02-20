@@ -1,37 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { app } from './firebase.config';
-
-const FirebaseAnalyticsDashboard = () => {
-  const [analyticsData, setAnalyticsData] = useState(null);
-
-  useEffect(() => {
-    const fetchAnalyticsData = async () => {
-      try {
-        const response = await getAnalytics(app).get('users');
-        setAnalyticsData(response.data);
-      } catch (error) {
-        console.error('Error fetching analytics data:', error);
-      }
-    };
-
-    fetchAnalyticsData();
-  }, []);
-
-  return (
-    <div>
-      <h1>Firebase Analytics Dashboard</h1>
-      {analyticsData ? (
-        <div>
-          <p>Total Users: {analyticsData.totalUsers}</p>
-          <p>Active Users: {analyticsData.activeUsers}</p>
-          {/* Add more analytics data as needed */}
-        </div>
-      ) : (
-        <p>Loading analytics data...</p>
-      )}
-    </div>
-  );
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+const firebaseConfig = {
+  apiKey: "AIzaSyABCb7q0gp9ZgSi9V9sEW1PVwwRr_SLPNQ",
+  authDomain: "lifeunderwater-f982b.firebaseapp.com",
+  projectId: "lifeunderwater-f982b",
+  storageBucket: "lifeunderwater-f982b.appspot.com",
+  messagingSenderId: "18534472639",
+  appId: "1:18534472639:web:e2340d9a4d6ac3c8605f0a",
+  measurementId: "G-4KJ52XZ24R"
 };
 
-export default FirebaseAnalyticsDashboard;
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+export { app, analytics,db ,storage };

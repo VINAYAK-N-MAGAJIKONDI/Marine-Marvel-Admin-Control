@@ -1,41 +1,19 @@
-// FirebaseAnalyticsDashboard.js
-import React, { useEffect, useState } from 'react';
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
-import { app } from '../../firebase'
+import React from 'react';
+import logo from '../../assets/logo.png'
+import './home.css';
 
-const FirebaseAnalyticsDashboard = () => {
-  const [analyticsData, setAnalyticsData] = useState(null);
+function WelcomeAdmin() {
+    return (<div className="base">
+        <div className="welcome-admin">
+            <img src={logo} alt="Logo" className="logo" />
+            <h1>Welcome Admin</h1>
+            <p className="motto">Empowering You to Save Lives Underwater</p>
+            <div className="message">
+                <p>As an admin, you play a crucial role in protecting marine life. Your efforts in managing and maintaining our underwater ecosystems contribute to the conservation of our oceans.</p>
+                <p>Together, let's work towards creating a sustainable future where marine life thrives. Thank you for your dedication and commitment to saving lives underwater!</p>
+            </div>
+        </div></div>
+    );
+}
 
-  useEffect(() => {
-    const fetchAnalyticsData = async () => {
-      try {
-        const analytics = getAnalytics(app);
-        const response = await analytics.get('users');
-        setAnalyticsData(response.data);
-      } catch (error) {
-        console.error('Error fetching analytics data:', error);
-      }
-    };
-
-    fetchAnalyticsData();
-  }, []);
-
-  return (
-    <div>
-      <h1>Firebase Analytics Dashboard</h1>
-      {analyticsData ? (
-        <div>
-          <p>Total Users: {analyticsData.totalUsers}</p>
-          <p>Active Users: {analyticsData.activeUsers}</p>
-          {/* Add more analytics data as needed */}
-        </div>
-      ) : (
-        <p>Loading analytics data...</p>
-      )}
-    </div>
-  );
-};
-
-export default FirebaseAnalyticsDashboard;
+export default WelcomeAdmin;

@@ -10,7 +10,7 @@ import ProductDisplay from "../../components/products/products";
 import Carousel from "../latest/latest";
 import Registrations from "../registrations/registrations";
 import 'firebase/analytics';
-import AdminDashboard from './analytics';
+import Analytics from './analytics';
 
 function Navigation() {
   return (
@@ -19,7 +19,7 @@ function Navigation() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<AdminDashboard/>} />
+          <Route path="/" element={<Analytics/>} />
           <Route path="/signout" element={<Signoutbutton />} />
           <Route path="/cleanups" element={<CleanUps />} />
           <Route path="/registrations" element={<Registrations />} />
