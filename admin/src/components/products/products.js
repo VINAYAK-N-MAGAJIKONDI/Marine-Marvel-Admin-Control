@@ -196,7 +196,7 @@ function ProductUpload() {
               <p className="product-price">Price: {product.price}</p>
               <p className="product-price">Rating: {product.rating}</p>
               <p className="product-price">Seller: {product.sellername}</p>
-              <p className="product-description">Description: {product.description}</p>
+              <p className="product-description"><strong>Description: </strong>{product.description}</p>
               <button onClick={() => handleDelete(product.id)} className="delete-button">
               <FaTrash /> Delete</button>
             </div>

@@ -75,13 +75,7 @@
     gap: 20px;
   }
   
-  .fund {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+ 
   .fund-label {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -100,17 +94,28 @@
     margin-top: 10px;
   }
   
-  .delete-button {
+  
+  .fund {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure each .fund box takes full height */
+}
+
+.delete-button {
+    margin-top: auto; /* Push the button to the bottom */
     background-color: #dc3545;
     color: #fff;
-    padding: 8px 12px;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .delete-button:hover {
+}
+
+.delete-button:hover {
     background-color: #c82333;
-  }
-  
+}

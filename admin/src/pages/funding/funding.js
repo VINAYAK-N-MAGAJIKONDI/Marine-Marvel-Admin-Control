@@ -158,7 +158,7 @@ function Fundings() {
                     <div key={fund.id} className="fund">
                         <h2 className="fund-label">{fund.label}</h2>
                         <img src={fund.imageurl} alt={fund.label} className="fund-img" />
-                        <p className="fund-description">Description: {fund.dec}</p>
+                        <p className="fund-description"><strong>Description: </strong>{fund.dec}</p>
                         <p className="fund-type">Type: {fund.type}</p>
                         <button onClick={() => handleDelete(fund.id)} className="delete-button">
                             <FaTrash /> Delete
