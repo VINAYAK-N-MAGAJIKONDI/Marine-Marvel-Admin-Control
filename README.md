@@ -81,8 +81,7 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
 3. Use the provided forms and interfaces to add, edit, or delete various items.
 4. Monitor dashboard metrics and statistics to track the performance of the application.
 
-## Support and Feedback
-For any questions, issues, or feedback regarding the Marine Marvel Admin website, please contact our support team at [support@marinemarvel.com](mailto:support@marinemarvel.com).
+
 
 ## Conclusion
-Thank you for using the Marine Marvel Admin website. We hope this documentation provides you with all the necessary information to install, configure, and use the admin interface effectively. If you have any further questions or need assistance, please don't hesitate to reach out to our support team.
+ We hope this documentation provides you with all the necessary information to install, configure, and use the admin interface effectively.  
