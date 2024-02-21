@@ -56,6 +56,9 @@ Marine Marvel is a mobile application designed for Android devices to promote ma
 ## Installation Instructions
 1. Clone the Marine Marvel Admin website repository from GitHub.
 2. Navigate to the project directory.
+   ```
+   cd admin
+   ```
 3. Install dependencies using npm or yarn:
    ```
    npm install
